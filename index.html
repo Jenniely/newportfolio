@@ -12,7 +12,6 @@
 </head>
 <body>
     <header></header>
-    <main>
        <div class="wrap">
             <section class="hero chunk">
                 <img class="hero__image" src="./img/DSC07355.jpg" alt="photo">
@@ -26,10 +25,10 @@
                     </ul>
                 </nav>
                 <ul class="social-links">
-                    <li class="social-links__link"></li>
-                    <li class="social-links__link"></li>
-                    <li class="social-links__link"></li>
-                    <li class="social-links__link"></li>
+                    <li class="social-links__link"><ion-icon name="logo-linkedin"></ion-icon></li>
+                    <li class="social-links__link"><ion-icon name="logo-github"></ion-icon></li>
+                    <li class="social-links__link"><ion-icon name="paper-plane-outline"></ion-icon></li>
+                    <li class="social-links__link"><ion-icon name="mail-outline"></ion-icon></li>
                 </ul>
             </section>
             <section class="slider chunk">
@@ -38,25 +37,150 @@
                     <ul class="slider__list">
                         <li class="slider__item slide">
                             <h3 class="slide__title">About</h3>
+                            <div class="slide__content">
+                                <p class="slide__text">I am an aspiring web developer who is passionate about technology and all the great things that can be created with it. Looking forward to find the place where my skills will be used for good.</p>
+                                <p class="slide__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ea harum quidem repudiandae ex pariatur nihil quam eum explicabo, cum neque, commodi animi officia molestias aspernatur voluptate eos veritatis placeat consectetur. Hic repudiandae dolores eveniet neque modi aperiam dolorem quod.</p>
+                            </div>
                         </li>
                         <li class="slider__item slide">
                             <h3 class="slide__title">Skills</h3>
+                            <ul class="slide__content skills">
+                                <li class="skills-item">
+                                    <ion-icon name="logo-html5"></ion-icon>
+                                    <p class="slide__text">HTML</p>
+                                </li>
+                                <li class="skills-item">
+                                    <ion-icon name="logo-css3"></ion-icon>
+                                    <p class="slide__text">CSS</p>
+                                </li>
+                                <li class="skills-item">
+                                    <ion-icon name="logo-sass"></ion-icon>
+                                    <p class="slide__text">SASS</p>
+                                </li>
+                                <li class="skills-item">
+                                    <ion-icon name="logo-javascript"></ion-icon>
+                                    <p class="slide__text">JavaScript</p>
+                                </li>
+                                <li class="skills-item">
+                                    <ion-icon name="code-working-outline"></ion-icon>
+                                    <p class="slide__text">PHP</p>
+                                </li>
+                                <li class="skills-item">
+                                    <ion-icon name="logo-react"></ion-icon>
+                                    <p class="slide__text">React JS</p>
+                                </li>
+                                <li class="skills-item">
+                                    <ion-icon name="logo-figma"></ion-icon>
+                                    <p class="slide__text">Figma</p>
+                                </li>
+                                <li class="skills-item">
+                                    <ion-icon name="git-branch-outline"></ion-icon>
+                                    <p class="slide__text">Git</p>
+                                </li>
+                            </ul>
                         </li>
                         <li class="slider__item slide">
                             <h3 class="slide__title">Portfolio</h3>
+                            <ul class="slide__content portfolio">
+                                <li class="portfolio__item">
+                                    <a href="" class="portfolio__link">
+                                    <div class="portfolio__content">
+                                        <img src="./img/weather.jpg" alt="portfolio image" class="portfolio__image">
+                                        <div class="portfolio__text">
+                                            <p class="portfolio__title">Weather App</p>
+                                        <p class="portfolio__subtitle">Shows weather upon request. Stack: React, CSS, OpenWeatherAPI, Unsplash API.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                                <li class="portfolio__item">
+                                    <a href="" class="portfolio__link">
+                                    <div class="portfolio__content">
+                                        <img src="./img/thebrand.jpg" alt="portfolio image" class="portfolio__image">
+                                        <div class="portfolio__text">
+                                            <p class="portfolio__title">The Brand</p>
+                                        <p class="portfolio__subtitle">Fashion shop website. Stack: HTML, SASS, vanilla JavaScript.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                                <li class="portfolio__item">
+                                    <a href="" class="portfolio__link">
+                                    <div class="portfolio__content">
+                                        <img src="./img/gardens.jpg" alt="portfolio image" class="portfolio__image">
+                                        <div class="portfolio__text">
+                                            <p class="portfolio__title">RCB Landscaping</p>
+                                        <p class="portfolio__subtitle">Landing page for landscaping business with my own design. Stack: Figma, HTML, SASS, vanilla JavaScript, PHP.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                                <li class="portfolio__item">
+                                    <a href="" class="portfolio__link">
+                                    <div class="portfolio__content">
+                                        <img src="./img/weather.jpg" alt="portfolio image" class="portfolio__image">
+                                        <div class="portfolio__text">
+                                            <p class="portfolio__title">Project</p>
+                                        <p class="portfolio__subtitle">Created with React and SASS</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="slider__item slide">
-                            <h3 class="slide__title">Contact</h3>
+                            <h3 class="slide__title">Contact Me</h3>
+                            <div class="slide__content contact">
+                                <p class="contact-form__text">Message me on:</p>
+                                <ul class="contact__link-list">
+                                    <li class="contact__link-list-item">
+                                        <a href="mailto:eugenia@jenniely.me" class="contact__link">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <span>Email</span></a>
+                                    </li>
+                                    <li class="contact__link-list-item">
+                                        <a href="https://t.me/jennie_ly" class="contact__link">
+                                            <ion-icon name="paper-plane-outline"></ion-icon>
+                                            <span>Telegram</span>
+                                        </a>
+                                    </li>
+                                    <li class="contact__link-list-item">
+                                        <a href="https://www.linkedin.com/in/eugenia-galantseva/" class="contact__link">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                        <span>LinkedIn</span>
+                                    </a>
+                                    </li>
+                                </ul>
+                                <form action="#" class="contact-form">
+                                    <p class="contact-form__text">Or simply fill in the form:</p>
+                                    <label class="contact-form__label">
+                                        <input class="contact-form__input" type="text" name="name" placeholder="Your name">
+                                    </label>
+                                    <label class="contact-form__label">
+                                        <input class="contact-form__input" type="email" name="email" placeholder="Your email">
+                                    </label>
+                                    <label class="contact-form__label">
+                                        <textarea class="contact-form__textarea" name="message" placeholder="What can I help you with?"></textarea>
+                                    </label>
+                                    <button class="contact-form__submit">Send</button>
+                                </form>
+                                
+                            </div>
                         </li>
                         <li class="slider__item slide-last">
                             <h3 class="slide__title">More</h3>
+                            <div class="slide__content">
+                            </div>
                         </li>
+                        <li class="slider__item slide-footer">
+                            <footer>Copyright Eugenia Galantseva 2021</footer>
+                        </li>
+
                     </ul>
                 </div>
             </section>
        </div>
-    </main>
-    <footer>Copyright Eugenia Galantseva 2021</footer>
     <script src="./js/script.js"></script>
+    <script defer type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

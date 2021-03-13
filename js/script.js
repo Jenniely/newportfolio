@@ -1,18 +1,17 @@
 const colors = [
-    ['#955670', '#275070', '#EBAAB0', '#F3E1C0'],
-    ['#81ABBC', '#313E61', '#FBD2C9', '#774A62'],
-    ['#BDC6D9', '#52688F', '#E3E7F1', '#7391C8'],
-    ['#432F70', '#713770', '#B34270', '#E95670'],
-    ['#2F5061', '#E57F84', '#F4EAE6', '#4297A0'],
-    ['#0B1320', '#1C3F60', '#AFC1D0', '#B1D4E0'],
-    ['#ADC8D2', '#9F9C93', '#54627B', '#F4F4F6'],
+    ['162447', '1f4068', '1f4068', 'e43f5a'],
+    ['1a1a2e', '16213e', '0f3460', 'e94560'],
+    ['17223b', '263859', '6b778d', 'ff6768'],
+    ['182952', '2b3595', '7045af', 'e14594'],
+    ['1d3e53', '254b62', '476d7c', '77abb7'],
+    ['4c5f7a', '393e6f', '3d2e4f', '321d2f'],
 ]
 
 const slides = Array.from(document.getElementsByClassName('slide'));
 let random = colors[Math.floor(Math.random() * colors.length)];
 
 const createColors = () => {
-    slides.map((slide, index) => slide.style.backgroundColor = random[index]);
+    slides.map((slide, index) => slide.style.backgroundColor = `#${random[index]}`);
 }
 
 window.onload = createColors();
