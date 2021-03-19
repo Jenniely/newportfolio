@@ -1,0 +1,32 @@
+class Form {
+    constructor() {
+        this.form = document.querySelector('form');
+        this.name = '1';
+        this.email = '2';
+        this.phone = '3';
+        this.message = '';
+        this.inputs =  document.querySelectorAll('fieldset input');
+        this.submit =  document.querySelector('button');
+        this.inputs.forEach(input => input.addEventListener('change', (e) => this.handleChange(e)));
+        this.submit.addEventListener('click', (e) => this.handleSubmit(e));
+    }
+
+    handleChange(e) {
+        const { target: { name, value } } = e;
+        this[name] = value;
+    }
+
+    handleSubmit(e) {
+        
+     e.preventDefault();
+        let namePattern = new RegExp('[A-Za-z]+', 'g');   
+        let emailPattern = new RegExp('[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+', 'g');
+     /*  let phonePattern = new RegExp('^\+[7][\(]\d{3}[\)]\d{3}[-]\d{4}$', 'gm'); */
+        console.log(namePattern.exec(this.name));
+        console.log(emailPattern.exec(this.email));
+        
+
+    }
+}
+
+let check = new Form();

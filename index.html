@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -17,10 +16,10 @@
                 <img class="hero__image" src="./img/DSC07355.jpg" alt="photo">
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Skills</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link active">About</a></li>
+                        <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+                        <li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
+                        <li class="menu__item"><a href="#contacts" class="menu__link">Contact</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Resume</a></li>
                     </ul>
                 </nav>
@@ -35,16 +34,16 @@
                 <h2 class="slider__title visually-hidden">Page slider</h2>
                 <div class="slider-content">
                     <ul class="slider__list">
-                        <li class="slider__item slide">
+                        <li class="slider__item slide about color0" id="about">
                             <h3 class="slide__title">About</h3>
                             <div class="slide__content">
                                 <p class="slide__text">I am an aspiring web developer who is passionate about technology and all the great things that can be created with it. Looking forward to find the place where my skills will be used for good.</p>
                                 <p class="slide__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ea harum quidem repudiandae ex pariatur nihil quam eum explicabo, cum neque, commodi animi officia molestias aspernatur voluptate eos veritatis placeat consectetur. Hic repudiandae dolores eveniet neque modi aperiam dolorem quod.</p>
                             </div>
                         </li>
-                        <li class="slider__item slide">
+                        <li class="slider__item slide skills color1"  id="skills">
                             <h3 class="slide__title">Skills</h3>
-                            <ul class="slide__content skills">
+                            <ul class="slide__content">
                                 <li class="skills-item">
                                     <ion-icon name="logo-html5"></ion-icon>
                                     <p class="slide__text">HTML</p>
@@ -79,16 +78,17 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="slider__item slide">
+                        <li class="slider__item slide portfolio color2" id="portfolio" >
                             <h3 class="slide__title">Portfolio</h3>
-                            <ul class="slide__content portfolio">
+                            <ul class="slide__content">
                                 <li class="portfolio__item">
                                     <a href="" class="portfolio__link">
                                     <div class="portfolio__content">
                                         <img src="./img/weather.jpg" alt="portfolio image" class="portfolio__image">
                                         <div class="portfolio__text">
                                             <p class="portfolio__title">Weather App</p>
-                                        <p class="portfolio__subtitle">Shows weather upon request. Stack: React, CSS, OpenWeatherAPI, Unsplash API.</p>
+                                        <p class="portfolio__subtitle">Shows weather upon request.</p>
+                                        <p class="portfolio__subtitle">Stack: React, CSS, OpenWeatherAPI, Unsplash API.</p>
                                         </div>
                                     </div>
                                 </a>
@@ -99,7 +99,8 @@
                                         <img src="./img/thebrand.jpg" alt="portfolio image" class="portfolio__image">
                                         <div class="portfolio__text">
                                             <p class="portfolio__title">The Brand</p>
-                                        <p class="portfolio__subtitle">Fashion shop website. Stack: HTML, SASS, vanilla JavaScript.</p>
+                                        <p class="portfolio__subtitle">Fashion shop website.</p>
+                                        <p class="portfolio__subtitle">Stack: HTML, SASS, Vue.js.</p>
                                         </div>
                                     </div>
                                 </a>
@@ -110,7 +111,8 @@
                                         <img src="./img/gardens.jpg" alt="portfolio image" class="portfolio__image">
                                         <div class="portfolio__text">
                                             <p class="portfolio__title">RCB Landscaping</p>
-                                        <p class="portfolio__subtitle">Landing page for landscaping business with my own design. Stack: Figma, HTML, SASS, vanilla JavaScript, PHP.</p>
+                                        <p class="portfolio__subtitle">Landing page for landscaping business with my own design.</p>
+                                        <p class="portfolio__subtitle">Stack: Figma, HTML, SASS, vanilla JavaScript, PHP.</p>
                                         </div>
                                     </div>
                                 </a>
@@ -128,9 +130,9 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="slider__item slide">
-                            <h3 class="slide__title">Contact Me</h3>
-                            <div class="slide__content contact">
+                        <li class="slider__item slide contact color3" id="contacts">
+                            <h3 class="slide__title" >Contact Me</h3>
+                            <div class="slide__content">
                                 <p class="contact-form__text">Message me on:</p>
                                 <ul class="contact__link-list">
                                     <li class="contact__link-list-item">
@@ -151,28 +153,33 @@
                                     </a>
                                     </li>
                                 </ul>
-                                <form action="#" class="contact-form">
+                                <form action="#" class="contact-form" method="POST">
                                     <p class="contact-form__text">Or simply fill in the form:</p>
                                     <label class="contact-form__label">
-                                        <input class="contact-form__input" type="text" name="name" placeholder="Your name">
+                                        <input class="contact-form__input" type="text" name="name" placeholder="Your name" required>
+                                        <ion-icon class="check-icon-name hidden" name="checkmark-circle-outline"></ion-icon>
                                     </label>
                                     <label class="contact-form__label">
-                                        <input class="contact-form__input" type="email" name="email" placeholder="Your email">
+                                        <input class="contact-form__input" type="email" name="email" placeholder="Your email" required>
+                                        <ion-icon class="check-icon-email hidden" name="checkmark-circle-outline"></ion-icon>
+                                        <p class="form_error hidden">
+                                            <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><title>Alert Circle</title><path d='M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z' fill='none' stroke='currentColor' stroke-miterlimit='10' stroke-width='32'/><path d='M250.26 166.05L256 288l5.73-121.95a5.74 5.74 0 00-5.79-6h0a5.74 5.74 0 00-5.68 6z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/><path d='M256 367.91a20 20 0 1120-20 20 20 0 01-20 20z'/></svg>Please enter a valid email</p>
                                     </label>
                                     <label class="contact-form__label">
-                                        <textarea class="contact-form__textarea" name="message" placeholder="What can I help you with?"></textarea>
+                                        <textarea class="contact-form__textarea" name="message" placeholder="What can I help you with?" required></textarea>
+                                        <ion-icon  class="check-icon-message hidden" name="checkmark-circle-outline"></ion-icon>
                                     </label>
                                     <button class="contact-form__submit">Send</button>
                                 </form>
                                 
                             </div>
                         </li>
-                        <li class="slider__item slide-last">
+                        <li class="slider__item slide more">
                             <h3 class="slide__title">More</h3>
                             <div class="slide__content">
                             </div>
                         </li>
-                        <li class="slider__item slide-footer">
+                        <li class="slider__item slide footer">
                             <footer>Copyright Eugenia Galantseva 2021</footer>
                         </li>
 
@@ -181,6 +188,7 @@
             </section>
        </div>
     <script src="./js/script.js"></script>
+    <script src="./js/form.js"></script>
     <script defer type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

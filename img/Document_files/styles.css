@@ -1,0 +1,255 @@
+body {
+    min-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+}
+
+.container {
+    margin: 0 5vw;
+}
+
+.shop {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop__title {
+    font-size: 36px;
+    color: #FFF;
+    text-align: center;
+}
+
+.shop__item-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.shop__item {
+  min-height: 350px;
+  flex-basis: 20%;
+  -ms-flex: auto;
+  width: 250px;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.shop__content {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shop__content img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.shop__content img:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+@media(max-width: 1333px) {
+    .shop__item {
+      flex-basis: 33.33%;
+    }
+  }
+  @media(max-width: 1073px) {
+    .shop__item {
+      flex-basis: 33.33%;
+    }
+  }
+  @media(max-width: 815px) {
+    .shop__item {
+      flex-basis: 50%;
+    }
+  }
+  @media(max-width: 555px) {
+    .shop__item {
+      flex-basis: 100%;
+    }
+  }
+
+  .shop__content-title {
+    padding:10px;
+  }
+
+  .shop__content-price {
+    padding:10px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: #273c75;
+    font-size: 14px;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+  }
+
+  .btn:active, .btn:focus {
+    background-color: #40739e;
+    outline: none;
+  } 
+  .header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  } 
+
+  .header__search {
+    width: 75%;
+    border: none;
+    height: 40px;
+    padding: 0 15px;
+  }
+
+  .header__cart-show {
+    margin: 25px auto;
+  }
+
+  .cart {
+    color: #FFF;
+    max-width: 1440px;
+
+    margin-top: 50px;
+  }
+
+  .cart__title {
+    font-size: 28px;
+  color: #FFF;
+  text-align: center;
+  }
+
+  .cart__empty {
+    text-align: center;
+    padding: 25px;
+  }
+
+  .burger {
+    margin: 50px auto;
+  }
+
+  .burger__title {
+    font-size: 36px;
+    color: #FFF;
+    text-align: center;
+  }
+
+  .burger-form {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #FFF;
+  }
+
+  fieldset {
+    margin: 25px 0;
+    padding: 10px;
+  }
+
+  .burger-form__legend {
+    padding: 10px;
+  }
+
+  .cart-item {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #FFF;
+    color: #323232;
+    padding: 0 20px;
+    margin: 10px 0;
+  }
+
+  .cart-item__thumb {
+    width: 70px;
+    object-fit: cover;
+  }
+
+  .cart-item__title {
+    width: 50%;
+  }
+
+  .cart__total {
+    text-align: right;
+  }
+
+  .form__wrap {
+    background-color: #FFF;
+    margin: 5vh 5vw;
+    padding: 5vh 5vw;
+    text-align: center;
+  }
+  
+  .form__fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .form__fieldset input {
+    width: 100%;
+    text-align: left;
+    margin: 25px 0;
+    height: 30px;
+    padding: 0 15px;
+  }
+
+  .form__fieldset textarea  {
+    width: 100%;
+    text-align: left;
+    margin: 25px 0;
+    height: 100px;
+    padding: 15px;
+  }
+
+  .form__fieldset input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    opacity: 0.8;;
+  }
+
+  .form__fieldset textarea::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    opacity: 0.8;;
+  }
+
+  .form__fieldset label {
+    text-align: left;
+  }
+
+.form__submit {
+  margin: 0 auto;
+}
