@@ -28,7 +28,7 @@ const slides = document.querySelectorAll('.slide');
     slides.forEach(slide => heights.push(getComputedStyle(slide).height.split('px')[0]));
     heights.reduce((acc, height) => {
         height = parseFloat(height);
-        checkpoints.push(acc);
+        checkpoints.push(acc-20);
         return acc + height;
     }, 0)
 
